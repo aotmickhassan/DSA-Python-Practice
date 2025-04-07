@@ -1,6 +1,5 @@
 import heapq
 
-<<<<<<< HEAD:LeetCode-Easy Solutions/703.Kth Largest Element.py
 
 class KthLargest:
 
@@ -13,27 +12,11 @@ class KthLargest:
     def add(self, val: int) -> int:
         heapq.heappush(self.minHeap, val)
         if len(self.minHeap) > self.k:
-=======
-class KthLargest:
-
-    def __init__(self, k: int, nums: List[int]):
-        self.minHeap, self.k=nums, k
-        heapq.heapify(self.minHeap)
-        while len(self.minHeap)>k:
             heapq.heappop(self.minHeap)
 
-    def add(self, val: int) -> int:
-        heapq.heappush(self.minHeap,val)
-        if len(self.minHeap)>self.k:
->>>>>>> 79dd1914627fddd68eba890e0c591b0180d11ae2:LeetCode/703.Kth Largest Element.py
-            heapq.heappop(self.minHeap)
         return self.minHeap[0]
 
 
 # Your KthLargest object will be instantiated and called as such:
 # obj = KthLargest(k, nums)
-<<<<<<< HEAD:LeetCode-Easy Solutions/703.Kth Largest Element.py
 # param_1 = obj.add(val)
-=======
-# param_1 = obj.add(val)
->>>>>>> 79dd1914627fddd68eba890e0c591b0180d11ae2:LeetCode/703.Kth Largest Element.py

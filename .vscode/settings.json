@@ -1,5 +1,35 @@
 {
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
-    "window.autoDetectColorScheme": false
+    "window.autoDetectColorScheme": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    // "editor.quickSuggestionsDelay": 2000, // Delay in milliseconds (2 seconds)
+    "github.copilot.chat.codeGeneration.useInstructionFiles": false,
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.enable": {
+        "plaintext": false
+    },
+    "github.copilot.chat.followUps": "always",
+    "php-intellisense.trace.server": "off",
+    "intelephense.codeLens.implementations.enable": true,
+
+    // Enable format on save
+    "editor.formatOnSave": true,
+
+    // Use the Black formatter for PEP 8 compliance
+    "python.formatting.provider": "black",
+
+    // Optional: Set Black-specific formatting arguments
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "79" // PEP 8 recommends a maximum line length of 79 characters
+    ],
+
+    // Enable autosave after 2 seconds
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 2000 // Delay in milliseconds (2 seconds)
 }
