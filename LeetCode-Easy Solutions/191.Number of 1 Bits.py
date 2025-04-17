@@ -3,7 +3,7 @@ class Solution:
         result = 0
 
         while n:
-            n = n & (n - 1)
+            n &= n - 1
             result += 1
 
         return result
@@ -11,7 +11,7 @@ class Solution:
         # result = 0
 
         # while n:
-        #     result += n % 2
+        #     result += n % 2P
         #     n = n >> 1
 
         # return result

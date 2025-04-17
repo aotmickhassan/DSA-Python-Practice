@@ -1,18 +1,23 @@
 {
     "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.autoImportCompletions": true,
+    // Removed duplicate key
     "window.autoDetectColorScheme": false,
-    "editor.suggestOnTriggerCharacters": false,
+    "editor.suggestOnTriggerCharacters": true, // Disable suggestions on trigger characters
     "editor.quickSuggestions": {
-        "comments": "on",
-        "strings": "on"
+        "comments": "on", // Disable suggestions in comments
+        "strings": "on",  // Disable suggestions in strings
+        "other": "on"     // Disable suggestions elsewhere
     },
+    "python.analysis.autoImportCompletions": true, // Disable auto-import completions
     // "editor.quickSuggestionsDelay": 2000, // Delay in milliseconds (2 seconds)
-    "github.copilot.chat.codeGeneration.useInstructionFiles": false,
-    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableAutoCompletions": false, // Disable Copilot auto-completions
     "github.copilot.enable": {
-        "plaintext": false
+        "plaintext": false,
+        "comments": "off", // Disable suggestions in comments
+        "strings": "off",  // Disable suggestions in strings
+        "other": "off" // Disable Copilot for plaintext files
     },
+    "github.copilot.chat.codeGeneration.useInstructionFiles": false, // Disable Copilot code generation
     "github.copilot.chat.followUps": "always",
     "php-intellisense.trace.server": "off",
     "intelephense.codeLens.implementations.enable": true,
