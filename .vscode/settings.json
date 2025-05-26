@@ -12,10 +12,14 @@
     // "editor.quickSuggestionsDelay": 2000, // Delay in milliseconds (2 seconds)
     "github.copilot.editor.enableAutoCompletions": false, // Disable Copilot auto-completions
     "github.copilot.enable": {
+        "*": false,
         "plaintext": false,
-        "comments": "off", // Disable suggestions in comments
-        "strings": "off",  // Disable suggestions in strings
-        "other": "off" // Disable Copilot for plaintext files
+        "markdown": false,
+        "scminput": false,
+        "comments": "off",
+        "strings": "off",
+        "other": "off",
+        "python": false
     },
     "github.copilot.chat.codeGeneration.useInstructionFiles": false, // Disable Copilot code generation
     "github.copilot.chat.followUps": "always",

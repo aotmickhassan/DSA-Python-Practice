@@ -1,13 +1,3 @@
-# Example 1:
-
-# Input: s = ["h","e","l","l","o"]
-# Output: ["o","l","l","e","h"]
-# Example 2:
-
-# Input: s = ["H","a","n","n","a","h"]
-# Output: ["h","a","n","n","a","H"]
-
-
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """
@@ -20,6 +10,7 @@ class Solution:
             s[l], s[r] = s[r], s[l]
             l, r = l + 1, r - 1
 
+
         # Time: O(n); Space: O(n)
         def reverse(l, r):
 
@@ -28,6 +19,7 @@ class Solution:
                 reverse(l + 1, r - 1)
 
         reverse(0, len(s) - 1)
+
 
         # Time: O(n); Space: O(n)
         stack = []
@@ -39,3 +31,14 @@ class Solution:
         while stack:
             s[i] = stack.pop()
             i += 1
+            
+            
+"""
+Example 1:
+Input: s = ["h","e","l","l","o"]
+Output: ["o","l","l","e","h"]
+
+Example 2:
+Input: s = ["H","a","n","n","a","h"]
+Output: ["h","a","n","n","a","H"]
+"""
